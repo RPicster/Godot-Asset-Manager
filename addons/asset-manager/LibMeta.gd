@@ -2,7 +2,7 @@ extends Resource
 class_name SceneLibraryItem
 
 export var descriptive_name : String
-export(String, FILE, "*.png") var icon_path : String
+export var icon_texture : Texture
 export(String, FILE, "*.tscn") var scene_path : String
 export var priority : int
 export var hide_in_list : bool

@@ -206,10 +206,13 @@ func _on_NewItemPopup_confirmed() -> void:
 	if $NewItemPopup/Margin/VBox/IconButton.icon == created_texture:
 		icon_value = respath_value + "/" + file_name + "_icon.png"
 		created_image.save_png(icon_value)
-	
+		plugin.get_editor_interface().get_resource_filesystem().update_file(icon_value)
+		plugin.get_editor_interface().get_resource_filesystem().scan()
+		yield(plugin.get_editor_interface().get_resource_filesystem(), "resources_reimported")
+
 	var new_library_entry : SceneLibraryItem = SceneLibraryItem.new()
 	new_library_entry.descriptive_name = descr_name
-	new_library_entry.icon_path = icon_value
+	new_library_entry.icon_texture = load( icon_value )
 	new_library_entry.scene_path = scenepath_value
 	new_library_entry.priority = prio_value
 	new_library_entry.hide_in_list = hide_value
@@ -217,7 +220,7 @@ func _on_NewItemPopup_confirmed() -> void:
 	new_library_entry.item_color = item_color
 	new_library_entry.path_prefix = $NewItemPopup/Margin/VBox/HBox/ItemPathLineEdit.text
 	
-	ResourceSaver.save(respath_value + "/" + file_name + ".tres", new_library_entry)
+	ResourceSaver.save(respath_value + "/" + file_name + ".tres", new_library_entry, 0)
 	scenepath_value = ""
 	yield(get_tree(), "idle_frame")
 	tabs.get_current_tab_control().update_entries()

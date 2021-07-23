@@ -44,7 +44,7 @@ font_data = SubResource( 5 )
 
 [sub_resource type="StyleBoxEmpty" id=7]
 
-[node name="Library" type="PanelContainer"]
+[node name="AssetManager" type="PanelContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -408.0

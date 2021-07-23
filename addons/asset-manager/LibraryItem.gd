@@ -4,7 +4,7 @@ class_name LibraryItem
 
 var plugin:EditorPlugin
 var resource_file_path:String
-var icon_path:String
+var icon_texture:Texture
 var path_prefix:String
 var scene_path:String
 var descriptive_name:String
@@ -13,7 +13,7 @@ var folder_path:String
 onready var popup = $PopupMenu
 onready var delete_popup = $DeletePopup
 
-func init( _file_path, _icon_path:String, _descriptive_name:String, _path_prefix:String, _scene_path:String, _category_dir:String, _color:Color, _plugin:EditorPlugin ) -> void:
+func init( _file_path, _icon_tex:Texture, _descriptive_name:String, _path_prefix:String, _scene_path:String, _category_dir:String, _color:Color, _plugin:EditorPlugin ) -> void:
 	resource_file_path = _file_path
 	plugin = _plugin
 	path_prefix = _path_prefix
@@ -26,9 +26,9 @@ func init( _file_path, _icon_path:String, _descriptive_name:String, _path_prefix
 		$ColorRect.color = _color
 	folder_path = _file_path.get_base_dir().replace(_category_dir, "")
 	
-	if _icon_path:
-		icon_path = _icon_path
-		$Item.icon = load(_icon_path)
+	if _icon_tex:
+		icon_texture = _icon_tex
+		$Item.icon = _icon_tex
 
 
 func _ready() -> void :
@@ -78,13 +78,13 @@ func _on_PopupMenu_id_pressed(id):
 func delete_from_asset_library():
 	var directory = Directory.new()
 	
-	if icon_path and icon_path != "":
-		if directory.file_exists(icon_path):
-			var error = directory.remove(icon_path)
+	if icon_texture and icon_texture != null:
+		if directory.file_exists(icon_texture.get_path()):
+			var error = directory.remove( icon_texture.get_path() )
 			if error:
 				print("Asset Manager: Error deleting Image File!")
 			else:
-				plugin.get_editor_interface().get_resource_filesystem().update_file(icon_path)
+				plugin.get_editor_interface().get_resource_filesystem().update_file( icon_texture.get_path() )
 		else:
 			print("Asset Manager: Image File not found")
 

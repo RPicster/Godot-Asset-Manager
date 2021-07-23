@@ -38,7 +38,7 @@ func load_entities():
 	var category_folders = get_directories(category_dir)
 	
 	if category_folders.empty():
-		yield(get_tree(), "idle_frame")
+		yield(get_tree().create_timer(0.1), "timeout")
 		load_entities()
 	
 	for i in len(category_folders):
@@ -102,7 +102,7 @@ func add_entities_in_dir(dir, path, parent):
 		
 		var entity_name : String = file
 		var descriptive_name : String = new_entity.descriptive_name
-		var icon_path : String = new_entity.icon_path
+		var icon_texture : Texture = new_entity.icon_texture
 		var scene_path : String = new_entity.scene_path
 		var priority : int = new_entity.priority
 		var path_prefix : String = new_entity.path_prefix
@@ -110,7 +110,7 @@ func add_entities_in_dir(dir, path, parent):
 		
 		if entity_path:
 			var item = LibraryItemScene.instance()
-			item.init(entity_path, icon_path, descriptive_name, path_prefix, scene_path, category_dir, item_color, plugin)
+			item.init(entity_path, icon_texture, descriptive_name, path_prefix, scene_path, category_dir, item_color, plugin)
 			parent.get_node("HBoxContainer/Children").add_child(item)
 			if priority > 0:
 				parent.move_child(item, max(0, item.get_index() - priority))
