@@ -1,0 +1,660 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://addons/asset-manager/Library.gd" type="Script" id=1]
+[ext_resource path="res://addons/asset-manager/LibraryCategory.gd" type="Script" id=2]
+[ext_resource path="res://addons/asset-manager/missing.png" type="Texture" id=3]
+
+[sub_resource type="Image" id=8]
+data = {
+"data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"format": "LumAlpha8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id=2]
+flags = 4
+flags = 4
+image = SubResource( 8 )
+size = Vector2( 16, 16 )
+
+[sub_resource type="Image" id=9]
+data = {
+"data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"format": "LumAlpha8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id=4]
+flags = 4
+flags = 4
+image = SubResource( 9 )
+size = Vector2( 16, 16 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://addons/asset-manager/NotoSansRegular.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 5 )
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[node name="Library" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -408.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 150, 500 )
+rect_clip_content = true
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tabs" type="TabContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 609.0
+margin_bottom = 804.0
+tab_align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameObjects" type="Control" parent="Tabs"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 34.0
+margin_right = -4.0
+margin_bottom = -4.0
+script = ExtResource( 2 )
+__meta__ = {
+"_tab_icon": SubResource( 2 ),
+"_tab_name": "Game Objects"
+}
+
+[node name="Content" type="VBoxContainer" parent="Tabs/GameObjects"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 230 )
+rect_clip_content = true
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Filter" type="HBoxContainer" parent="Tabs/GameObjects/Content"]
+margin_right = 594.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 200, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Tabs/GameObjects/Content/Filter"]
+margin_right = 498.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 170, 25 )
+size_flags_horizontal = 3
+text = "Search"
+virtual_keyboard_enabled = false
+clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="ShowAllButton" type="Button" parent="Tabs/GameObjects/Content/Filter"]
+margin_left = 502.0
+margin_right = 530.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 0, 16 )
+hint_tooltip = "Show all categories"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="HideAllButton" type="Button" parent="Tabs/GameObjects/Content/Filter"]
+margin_left = 534.0
+margin_right = 562.0
+margin_bottom = 26.0
+hint_tooltip = "Hide all categories"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="UpdateListButton" type="Button" parent="Tabs/GameObjects/Content/Filter"]
+margin_left = 566.0
+margin_right = 594.0
+margin_bottom = 26.0
+hint_tooltip = "Update all assets"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="HSeparator" type="HSeparator" parent="Tabs/GameObjects/Content"]
+margin_top = 30.0
+margin_right = 594.0
+margin_bottom = 34.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Tabs/GameObjects/Content"]
+margin_top = 38.0
+margin_right = 594.0
+margin_bottom = 759.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_min_size = Vector2( 50, 500 )
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entries" type="VBoxContainer" parent="Tabs/GameObjects/Content/ScrollContainer"]
+margin_right = 594.0
+margin_bottom = 721.0
+grow_vertical = 0
+rect_min_size = Vector2( 180, 200 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="DirectoriesInstruction" type="Label" parent="Tabs/GameObjects/Content"]
+visible = false
+margin_top = 66.0
+margin_right = 301.0
+margin_bottom = 182.0
+text = "Welcome to the Asset Manager Plugin!
+
+To use this plugin go to:
+\"Project Settings / Gui / Asset Manager Library\"
+and setup the Paths that you want to use.
+
+Setting up multiple paths will enable Tabs!"
+
+[node name="RefreshButton" type="Button" parent="Tabs/GameObjects/Content"]
+visible = false
+margin_top = 66.0
+margin_right = 301.0
+margin_bottom = 86.0
+text = "Refresh"
+
+[node name="Deco" type="Control" parent="Tabs"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 34.0
+margin_right = -4.0
+margin_bottom = -4.0
+script = ExtResource( 2 )
+__meta__ = {
+"_tab_icon": SubResource( 2 ),
+"_tab_name": "Game Objects"
+}
+
+[node name="Content" type="VBoxContainer" parent="Tabs/Deco"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 230 )
+rect_clip_content = true
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Filter" type="HBoxContainer" parent="Tabs/Deco/Content"]
+margin_right = 594.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 200, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Tabs/Deco/Content/Filter"]
+margin_right = 498.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 170, 25 )
+size_flags_horizontal = 3
+text = "Search"
+virtual_keyboard_enabled = false
+clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="ShowAllButton" type="Button" parent="Tabs/Deco/Content/Filter"]
+margin_left = 502.0
+margin_right = 530.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 0, 16 )
+hint_tooltip = "Show all categories"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="HideAllButton" type="Button" parent="Tabs/Deco/Content/Filter"]
+margin_left = 534.0
+margin_right = 562.0
+margin_bottom = 26.0
+hint_tooltip = "Hide all categories"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="UpdateListButton" type="Button" parent="Tabs/Deco/Content/Filter"]
+margin_left = 566.0
+margin_right = 594.0
+margin_bottom = 26.0
+hint_tooltip = "Update all assets"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="HSeparator" type="HSeparator" parent="Tabs/Deco/Content"]
+margin_top = 30.0
+margin_right = 594.0
+margin_bottom = 34.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Tabs/Deco/Content"]
+margin_top = 38.0
+margin_right = 594.0
+margin_bottom = 759.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_min_size = Vector2( 50, 500 )
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entries" type="VBoxContainer" parent="Tabs/Deco/Content/ScrollContainer"]
+margin_right = 594.0
+margin_bottom = 721.0
+grow_vertical = 0
+rect_min_size = Vector2( 180, 200 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="DirectoriesInstruction" type="Label" parent="Tabs/Deco/Content"]
+visible = false
+margin_top = 66.0
+margin_right = 301.0
+margin_bottom = 182.0
+text = "Welcome to the Asset Manager Plugin!
+
+To use this plugin go to:
+\"Project Settings / Gui / Asset Manager Library\"
+and setup the Paths that you want to use.
+
+Setting up multiple paths will enable Tabs!"
+
+[node name="RefreshButton" type="Button" parent="Tabs/Deco/Content"]
+visible = false
+margin_top = 66.0
+margin_right = 301.0
+margin_bottom = 86.0
+text = "Refresh"
+
+[node name="Levels" type="Control" parent="Tabs"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 34.0
+margin_right = -4.0
+margin_bottom = -4.0
+script = ExtResource( 2 )
+__meta__ = {
+"_tab_icon": SubResource( 2 ),
+"_tab_name": "Game Objects"
+}
+
+[node name="Content" type="VBoxContainer" parent="Tabs/Levels"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 230 )
+rect_clip_content = true
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Filter" type="HBoxContainer" parent="Tabs/Levels/Content"]
+margin_right = 594.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 200, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Tabs/Levels/Content/Filter"]
+margin_right = 498.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 170, 25 )
+size_flags_horizontal = 3
+text = "Search"
+virtual_keyboard_enabled = false
+clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="ShowAllButton" type="Button" parent="Tabs/Levels/Content/Filter"]
+margin_left = 502.0
+margin_right = 530.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 0, 16 )
+hint_tooltip = "Show all categories"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="HideAllButton" type="Button" parent="Tabs/Levels/Content/Filter"]
+margin_left = 534.0
+margin_right = 562.0
+margin_bottom = 26.0
+hint_tooltip = "Hide all categories"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="UpdateListButton" type="Button" parent="Tabs/Levels/Content/Filter"]
+margin_left = 566.0
+margin_right = 594.0
+margin_bottom = 26.0
+hint_tooltip = "Update all assets"
+icon = SubResource( 4 )
+flat = true
+align = 0
+
+[node name="HSeparator" type="HSeparator" parent="Tabs/Levels/Content"]
+margin_top = 30.0
+margin_right = 594.0
+margin_bottom = 34.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Tabs/Levels/Content"]
+margin_top = 38.0
+margin_right = 594.0
+margin_bottom = 759.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_min_size = Vector2( 50, 500 )
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entries" type="VBoxContainer" parent="Tabs/Levels/Content/ScrollContainer"]
+margin_right = 594.0
+margin_bottom = 721.0
+grow_vertical = 0
+rect_min_size = Vector2( 180, 200 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="DirectoriesInstruction" type="Label" parent="Tabs/Levels/Content"]
+visible = false
+margin_top = 66.0
+margin_right = 301.0
+margin_bottom = 182.0
+text = "Welcome to the Asset Manager Plugin!
+
+To use this plugin go to:
+\"Project Settings / Gui / Asset Manager Library\"
+and setup the Paths that you want to use.
+
+Setting up multiple paths will enable Tabs!"
+
+[node name="RefreshButton" type="Button" parent="Tabs/Levels/Content"]
+visible = false
+margin_top = 66.0
+margin_right = 301.0
+margin_bottom = 86.0
+text = "Refresh"
+
+[node name="NewItemPopup" type="AcceptDialog" parent="."]
+visible = true
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 609.0
+margin_bottom = 804.0
+size_flags_horizontal = 9
+size_flags_vertical = 9
+popup_exclusive = true
+window_title = "Add Scene to Asset Manager"
+
+[node name="Margin" type="MarginContainer" parent="NewItemPopup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -36.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="NewItemPopup/Margin"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 576.0
+margin_bottom = 743.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="NewItemPopup/Margin/VBox"]
+margin_right = 566.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 6 )
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spacer5" type="MarginContainer" parent="NewItemPopup/Margin/VBox"]
+margin_top = 27.0
+margin_right = 566.0
+margin_bottom = 47.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="DescrLabel" type="Label" parent="NewItemPopup/Margin/VBox"]
+margin_top = 51.0
+margin_right = 566.0
+margin_bottom = 65.0
+text = "Short Description"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DescrLineEdit" type="LineEdit" parent="NewItemPopup/Margin/VBox"]
+margin_top = 69.0
+margin_right = 566.0
+margin_bottom = 93.0
+placeholder_text = "e.g. Infantry - Soldier"
+
+[node name="Spacer" type="MarginContainer" parent="NewItemPopup/Margin/VBox"]
+margin_top = 97.0
+margin_right = 566.0
+margin_bottom = 117.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="ItemPathLabel" type="Label" parent="NewItemPopup/Margin/VBox"]
+margin_top = 121.0
+margin_right = 566.0
+margin_bottom = 135.0
+text = "Path Prefix (Added to the generated Path)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="NewItemPopup/Margin/VBox"]
+margin_top = 139.0
+margin_right = 566.0
+margin_bottom = 163.0
+custom_constants/separation = 10
+
+[node name="ItemPathLineEdit" type="LineEdit" parent="NewItemPopup/Margin/VBox/HBox"]
+margin_right = 355.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+clear_button_enabled = true
+
+[node name="SavePresetButton" type="Button" parent="NewItemPopup/Margin/VBox/HBox"]
+margin_left = 365.0
+margin_right = 469.0
+margin_bottom = 24.0
+text = "Save as Preset"
+flat = true
+
+[node name="ItemPathPresetButton" type="MenuButton" parent="NewItemPopup/Margin/VBox/HBox"]
+margin_left = 479.0
+margin_right = 566.0
+margin_bottom = 24.0
+text = "Load Preset"
+items = [ "EpicShit/Test", null, 0, false, false, 0, 0, null, "", false ]
+
+[node name="Spacer3" type="MarginContainer" parent="NewItemPopup/Margin/VBox"]
+margin_top = 167.0
+margin_right = 566.0
+margin_bottom = 187.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="CategoryTabs" type="TabContainer" parent="NewItemPopup/Margin/VBox"]
+margin_top = 191.0
+margin_right = 566.0
+margin_bottom = 215.0
+custom_styles/panel = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameObject" type="Control" parent="NewItemPopup/Margin/VBox/CategoryTabs"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 24.0
+
+[node name="Deco" type="Control" parent="NewItemPopup/Margin/VBox/CategoryTabs"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 24.0
+
+[node name="Levels" type="Control" parent="NewItemPopup/Margin/VBox/CategoryTabs"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 24.0
+
+[node name="ResPathButton" type="Button" parent="NewItemPopup/Margin/VBox"]
+margin_top = 219.0
+margin_right = 566.0
+margin_bottom = 239.0
+text = "Select Resource Path (Category)"
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spacer2" type="MarginContainer" parent="NewItemPopup/Margin/VBox"]
+margin_top = 243.0
+margin_right = 566.0
+margin_bottom = 263.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="IconButton" type="Button" parent="NewItemPopup/Margin/VBox"]
+margin_top = 267.0
+margin_right = 566.0
+margin_bottom = 347.0
+rect_min_size = Vector2( 0, 80 )
+text = "Select Icon"
+icon = ExtResource( 3 )
+align = 0
+expand_icon = true
+
+[node name="Spacer4" type="MarginContainer" parent="NewItemPopup/Margin/VBox"]
+margin_top = 351.0
+margin_right = 566.0
+margin_bottom = 371.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NewItemPopup/Margin/VBox"]
+margin_top = 375.0
+margin_right = 566.0
+margin_bottom = 399.0
+custom_constants/separation = 30
+alignment = 1
+
+[node name="PrioSpinBox" type="SpinBox" parent="NewItemPopup/Margin/VBox/HBoxContainer"]
+margin_right = 168.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+max_value = 20.0
+rounded = true
+align = 2
+prefix = "Display Priority:"
+
+[node name="ShowCheckBox" type="CheckBox" parent="NewItemPopup/Margin/VBox/HBoxContainer"]
+margin_left = 198.0
+margin_right = 367.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+text = "Show in Library"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="NewItemPopup/Margin/VBox/HBoxContainer"]
+margin_left = 397.0
+margin_right = 566.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+text = "Item Color"
+
+[connection signal="focus_entered" from="Tabs/GameObjects/Content/Filter/TextEdit" to="Tabs/GameObjects" method="_on_TextEdit_focus_entered"]
+[connection signal="text_changed" from="Tabs/GameObjects/Content/Filter/TextEdit" to="Tabs/GameObjects" method="_on_TextEdit_text_changed"]
+[connection signal="pressed" from="Tabs/GameObjects/Content/Filter/ShowAllButton" to="Tabs/GameObjects" method="_on_ShowAllButton_pressed"]
+[connection signal="pressed" from="Tabs/GameObjects/Content/Filter/HideAllButton" to="Tabs/GameObjects" method="_on_HideAllButton_pressed"]
+[connection signal="pressed" from="Tabs/GameObjects/Content/Filter/UpdateListButton" to="Tabs/GameObjects" method="update_entries"]
+[connection signal="focus_entered" from="Tabs/Deco/Content/Filter/TextEdit" to="Tabs/Deco" method="_on_TextEdit_focus_entered"]
+[connection signal="text_changed" from="Tabs/Deco/Content/Filter/TextEdit" to="Tabs/Deco" method="_on_TextEdit_text_changed"]
+[connection signal="pressed" from="Tabs/Deco/Content/Filter/ShowAllButton" to="Tabs/Deco" method="_on_ShowAllButton_pressed"]
+[connection signal="pressed" from="Tabs/Deco/Content/Filter/HideAllButton" to="Tabs/Deco" method="_on_HideAllButton_pressed"]
+[connection signal="pressed" from="Tabs/Deco/Content/Filter/UpdateListButton" to="Tabs/Deco" method="update_entries"]
+[connection signal="focus_entered" from="Tabs/Levels/Content/Filter/TextEdit" to="Tabs/Levels" method="_on_TextEdit_focus_entered"]
+[connection signal="text_changed" from="Tabs/Levels/Content/Filter/TextEdit" to="Tabs/Levels" method="_on_TextEdit_text_changed"]
+[connection signal="pressed" from="Tabs/Levels/Content/Filter/ShowAllButton" to="Tabs/Levels" method="_on_ShowAllButton_pressed"]
+[connection signal="pressed" from="Tabs/Levels/Content/Filter/HideAllButton" to="Tabs/Levels" method="_on_HideAllButton_pressed"]
+[connection signal="pressed" from="Tabs/Levels/Content/Filter/UpdateListButton" to="Tabs/Levels" method="update_entries"]
+[connection signal="confirmed" from="NewItemPopup" to="." method="_on_NewItemPopup_confirmed"]
+[connection signal="pressed" from="NewItemPopup/Margin/VBox/HBox/SavePresetButton" to="." method="_on_SavePresetButton_pressed"]
+[connection signal="tab_changed" from="NewItemPopup/Margin/VBox/CategoryTabs" to="." method="_new_asset_popup_cat_tab_changed"]
+[connection signal="pressed" from="NewItemPopup/Margin/VBox/ResPathButton" to="." method="_on_ResPathButton_pressed"]
+[connection signal="pressed" from="NewItemPopup/Margin/VBox/IconButton" to="." method="_on_IconButton_pressed"]
+[connection signal="value_changed" from="NewItemPopup/Margin/VBox/HBoxContainer/PrioSpinBox" to="." method="_on_PrioSpinBox_value_changed"]
+[connection signal="toggled" from="NewItemPopup/Margin/VBox/HBoxContainer/ShowCheckBox" to="." method="_on_ShowCheckBox_toggled"]
+[connection signal="color_changed" from="NewItemPopup/Margin/VBox/HBoxContainer/ColorPickerButton" to="." method="_Popup_ColorPicker_changed"]

@@ -1,0 +1,145 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/asset-manager/LibraryCategory.gd" type="Script" id=1]
+
+[sub_resource type="Image" id=3]
+data = {
+"data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"format": "LumAlpha8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id=2]
+flags = 4
+flags = 4
+image = SubResource( 3 )
+size = Vector2( 16, 16 )
+
+[node name="GameObjects" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 34.0
+margin_right = -4.0
+margin_bottom = -4.0
+script = ExtResource( 1 )
+__meta__ = {
+"_tab_icon": SubResource( 2 ),
+"_tab_name": "Game Objects"
+}
+
+[node name="Content" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 230 )
+rect_clip_content = true
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Filter" type="HBoxContainer" parent="Content"]
+margin_right = 1016.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 200, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Content/Filter"]
+margin_right = 920.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 170, 25 )
+size_flags_horizontal = 3
+text = "Search"
+virtual_keyboard_enabled = false
+clear_button_enabled = true
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="ShowAllButton" type="Button" parent="Content/Filter"]
+margin_left = 924.0
+margin_right = 952.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 0, 16 )
+hint_tooltip = "Show all categories"
+icon = SubResource( 2 )
+flat = true
+align = 0
+
+[node name="HideAllButton" type="Button" parent="Content/Filter"]
+margin_left = 956.0
+margin_right = 984.0
+margin_bottom = 26.0
+hint_tooltip = "Hide all categories"
+icon = SubResource( 2 )
+flat = true
+align = 0
+
+[node name="UpdateListButton" type="Button" parent="Content/Filter"]
+margin_left = 988.0
+margin_right = 1016.0
+margin_bottom = 26.0
+hint_tooltip = "Update all assets"
+icon = SubResource( 2 )
+flat = true
+align = 0
+
+[node name="HSeparator" type="HSeparator" parent="Content"]
+margin_top = 30.0
+margin_right = 1016.0
+margin_bottom = 34.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Content"]
+margin_top = 38.0
+margin_right = 1016.0
+margin_bottom = 562.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_min_size = Vector2( 50, 500 )
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entries" type="VBoxContainer" parent="Content/ScrollContainer"]
+margin_right = 1016.0
+margin_bottom = 524.0
+grow_vertical = 0
+rect_min_size = Vector2( 180, 200 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="DirectoriesInstruction" type="Label" parent="Content"]
+visible = false
+margin_top = 66.0
+margin_right = 301.0
+margin_bottom = 182.0
+text = "Welcome to the Asset Manager Plugin!
+
+To use this plugin go to:
+\"Project Settings / Gui / Asset Manager Library\"
+and setup the Paths that you want to use.
+
+Setting up multiple paths will enable Tabs!"
+
+[node name="RefreshButton" type="Button" parent="Content"]
+visible = false
+margin_top = 66.0
+margin_right = 301.0
+margin_bottom = 86.0
+text = "Refresh"
+
+[connection signal="focus_entered" from="Content/Filter/TextEdit" to="." method="_on_TextEdit_focus_entered"]
+[connection signal="text_changed" from="Content/Filter/TextEdit" to="." method="_on_TextEdit_text_changed"]
+[connection signal="pressed" from="Content/Filter/ShowAllButton" to="." method="_on_ShowAllButton_pressed"]
+[connection signal="pressed" from="Content/Filter/HideAllButton" to="." method="_on_HideAllButton_pressed"]
+[connection signal="pressed" from="Content/Filter/UpdateListButton" to="." method="update_entries"]
