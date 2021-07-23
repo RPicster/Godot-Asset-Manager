@@ -80,7 +80,7 @@ func _input(event) -> void:
 
 func start_drag( entity_item : LibraryItem ) -> void:
 	placing_entity_item = entity_item
-	placing_previewer.set_preview( entity_item.icon_path, entity_item.descriptive_name, entity_item.scene_path )
+	placing_previewer.set_preview( entity_item.icon_texture, entity_item.descriptive_name, entity_item.scene_path )
 
 
 func stop_drag() -> void:

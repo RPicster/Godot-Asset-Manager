@@ -47,14 +47,14 @@ func _input(event):
 			info.text = "Rot: " + str(round(scene.rotation_degrees))
 
 
-func set_preview( texture:String, descr:String, _scene_path:String ) -> void:
+func set_preview( texture:Texture, descr:String, _scene_path:String ) -> void:
 	preview.show()
 	angular_velocity = 0
 	preview.rotation = 0
 	scene_path = _scene_path
 	$Preview/Label.text = descr
-	if texture != "":
-		$Preview/TextureRect.texture = load(texture)
+	if texture != null:
+		$Preview/TextureRect.texture = texture
 	else:
 		$Preview/TextureRect.texture = null
 	set_process(true)
@@ -99,7 +99,7 @@ func cancel_placement() -> void:
 	
 
 func stop() -> void:
-	set_preview( "", "", "" )
+	set_preview( null, "", "" )
 	switch_preview_mode(false, Vector2.ONE)
 	is_active = false
 	set_process(false)
