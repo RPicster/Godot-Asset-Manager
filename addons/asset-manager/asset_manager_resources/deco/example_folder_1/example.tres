@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://addons/asset-manager/LibMeta.gd" type="Script" id=1]
+[ext_resource path="res://addons/asset-manager/asset_manager_resources/deco/example_folder_1/star_icon.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+descriptive_name = "Example"
+icon_texture = ExtResource( 2 )
+scene_path = ""
+priority = 0
+hide_in_list = false
+path_prefix = ""
+favorite = false
+item_color = Color( 0, 0, 0, 1 )
