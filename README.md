@@ -1,5 +1,5 @@
 # Godot Asset Manager
-A Plugin to make game creation in Godot faster, easier and more straightforward!
+A Plugin to make game creation in Godot faster, easier and more straightforward! The first version was developed by Guy Unger and development was continued by myself.
 
 ## Installation:
 - Copy the addon folder to your Godot project folder
