@@ -233,6 +233,7 @@ func _on_ShowCheckBox_toggled( button_pressed ) -> void:
 func _on_itempath_preset_pressed( id:int ) -> void:
 	$NewItemPopup/Margin/VBox/HBox/ItemPathLineEdit.text = preset_popup.get_item_text(id)
 
+
 func _on_SavePresetButton_pressed():
 	if $NewItemPopup/Margin/VBox/HBox/ItemPathLineEdit.text == "":
 		return
@@ -252,6 +253,27 @@ func message( text:String, priority : int = 0 ) -> void:
 	elif priority == 2:
 		printerr( basetext + text)
 
+# Still work in progress
+#func editItem( resource_file_path:String, folder_path:String ) -> void:
+#	folder_path += "/"
+#	var item = load( resource_file_path )
+#	scenepath_value = item.get_path()
+#	var item_paths : Array = resource_file_path.split(folder_path)
+#
+#	respath_dialog.current_dir = item_paths[0] + folder_path
+#	respath_dialog.current_path = item_paths[0] + folder_path
+#	$NewItemPopup/Margin/VBox/ResPathButton.text = item_paths[0].replace(asset_manager_dir, "") + folder_path
+#	$NewItemPopup/Margin/VBox/Title.text = item.scene_path
+#	$NewItemPopup/Margin/VBox/HBoxContainer/ColorPickerButton.color = item.item_color
+#	$NewItemPopup/Margin/VBox/HBoxContainer/ShowCheckBox.pressed = !item.hide_in_list
+#	$NewItemPopup/Margin/VBox/HBox/ItemPathLineEdit.text = item.path_prefix
+#	$NewItemPopup/Margin/VBox/DescrLineEdit.text = item.descriptive_name
+#	$NewItemPopup/Margin/VBox/IconButton.icon = item.icon_texture
+#	$NewItemPopup/Margin/VBox/HBoxContainer/PrioSpinBox.value = item.priority
+#	$NewItemPopup/Margin/VBox/HBoxContainer/PrioSpinBox.apply()
+#	$NewItemPopup.popup_centered_ratio(0.4)
+#	$NewItemPopup/Margin/VBox/HBoxContainer/PrioSpinBox.apply()
+
 
 func _new_asset_popup_cat_tab_changed(tab):
 	respath_dialog.current_dir = category_dirs[ tab ]
@@ -266,4 +288,8 @@ func _Popup_ColorPicker_changed(color):
 func get_canvas_scale() -> Vector2:
 	get_current_viewport()
 	return Vector2.ONE * target_viewport.global_canvas_transform.x.x
-	
+
+
+
+func _on_NewItemPopup_popup_hide():
+	print("hidden")

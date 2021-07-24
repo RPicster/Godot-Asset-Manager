@@ -73,6 +73,8 @@ func _on_PopupMenu_id_pressed(id):
 	elif id == 3:
 		delete_popup.rect_position = popup.rect_position
 		delete_popup.popup()
+	elif id == 2:
+		plugin.library.editItem(resource_file_path, folder_path)
 
 
 func delete_from_asset_library():

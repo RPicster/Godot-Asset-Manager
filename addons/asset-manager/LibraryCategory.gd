@@ -47,11 +47,7 @@ func load_entities():
 		var section = LibrarySectionScene.instance()
 		sections.append(section)
 		
-		var results : Array = []
-		for result in regex.search_all(category_name):
-			results.push_back(result.get_string())
-		if !results.empty():
-			category_name = category_name.split(results[0])[1]
+		category_name = remove_prefix(category_name)
 		
 		section.get_node("Headline/CheckBox").text = category_name
 		container.add_child(section)
@@ -72,11 +68,7 @@ func check_for_subcategories( dir:EditorFileSystemDirectory, parent:Object, pare
 		var subsection = LibrarySubSectionScene.instance()
 		subsections.append(subsection)
 		
-		var results : Array = []
-		for result in regex.search_all(subdir_name):
-			results.push_back(result.get_string())
-		if !results.empty():
-			subdir_name = subdir_name.split(results[0])[1]
+		subdir_name = remove_prefix(subdir_name)
 		
 		subsection.get_node("Headline/CheckBox").text = subdir_name
 		parent.get_node("HBoxContainer/Children").add_child(subsection)
@@ -86,6 +78,15 @@ func check_for_subcategories( dir:EditorFileSystemDirectory, parent:Object, pare
 			check_for_subcategories( subdir, subsection, subdir_path )
 	
 		add_entities_in_dir(subdir, subdir_path, subsection)
+
+
+func remove_prefix(_string:String) -> String:
+	var results : Array = []
+	for result in regex.search_all(_string):
+		results.push_back(result.get_string())
+	if !results.empty():
+		_string = _string.split(results[0])[1]
+	return _string
 
 
 func add_entities_in_dir(dir, path, parent):

@@ -9,6 +9,7 @@ var placing_previewer : CanvasLayer
 
 var alt_key_pressed := false
 var shift_key_pressed := false
+var regex = RegEx.new()
 
 
 func _ready() -> void:
@@ -19,6 +20,7 @@ func _ready() -> void:
 
 
 func _enter_tree() -> void:
+	regex.compile("^[\\d-]*_")
 	_add_setting("gui/asset_manager_plugin/resource_directory", TYPE_STRING, "res://addons/asset-manager/asset_manager_resources" , PROPERTY_HINT_DIR)
 	_add_setting("gui/asset_manager_plugin/path_prefix_presets", TYPE_STRING_ARRAY, [])
 	_add_setting("gui/asset_manager_plugin/pixel_snapping", TYPE_BOOL, true)
@@ -129,7 +131,7 @@ func cancel_drag() -> void:
 
 func get_entity_parent( item : LibraryItem ) -> Node2D:
 	var path_prefix : String = item.path_prefix.trim_prefix("/").trim_suffix("/")
-	var asset_manager_path = item.folder_path
+	var asset_manager_path = remove_prefix(item.folder_path)
 	var full_path : String = asset_manager_path
 	
 	if path_prefix != "":
@@ -157,7 +159,16 @@ func get_entity_parent( item : LibraryItem ) -> Node2D:
 			var node:Node2D = Node2D.new()
 			parent_obj.add_child(node, true)
 			node.set_owner(scene)
-			node.name = folder
+			node.name = remove_prefix(folder)
 			parent_obj = node
 	
 	return parent_obj
+
+
+func remove_prefix(_string:String) -> String:
+	var results : Array = []
+	for result in regex.search_all(_string):
+		results.push_back(result.get_string())
+	if !results.empty():
+		_string = _string.split(results[0])[1]
+	return _string
