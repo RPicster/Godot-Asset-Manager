@@ -14,7 +14,7 @@ The plugin works with a folder structure, it is separated into three main catego
 - Levels (This can be used to organize and easily access your levels and maps
 
 
-To get started, create a new directory inside these three main directories and then add Opened Scenes using the Star Button in the upper left of the 2D Viewport toolbar.
+To get started, create a new directory inside these three main directories and then add Opened Scenes using the Star Button in the upper right of the 2D Viewport toolbar.
 
 To sort the directories, you can add 01_XXX 02_XXX, these prefixes will not be displayed in the Asset Manager.
 
