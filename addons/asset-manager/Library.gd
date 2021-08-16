@@ -165,6 +165,7 @@ func _on_AddSceneButton_pressed() -> void:
 	$NewItemPopup/Margin/VBox/HBoxContainer/ColorPickerButton.color = Color.black
 	$NewItemPopup/Margin/VBox/HBoxContainer/ShowCheckBox.pressed = true
 	$NewItemPopup/Margin/VBox/Title.text = scenepath_value
+	$NewItemPopup/Margin/VBox/DescrLineEdit.text = get_tree().edited_scene_root.name
 	$NewItemPopup.popup_centered_ratio(0.4)
 	$NewItemPopup/Margin/VBox/HBoxContainer/PrioSpinBox.apply()
 
